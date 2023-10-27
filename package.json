@@ -1,0 +1,20 @@
+{
+  "name": "cypress-automation",
+  "version": "1.0.0",
+  "description": "Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "triggerAllTests": "npx cypress run",
+    "junit-merge": "npx junit-merge -d cypress/results -o cypress/results/results.xml",
+    "delete-report": "rm -rf cypress/results/results.xml",
+    "delete-all-reports": "rm -rf cypress/results/* || true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.14.0",
+    "cypress-multi-reporters": "^1.6.3",
+    "mocha-junit-reporter": "^2.2.1"
+  }
+}
