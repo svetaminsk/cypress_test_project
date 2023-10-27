@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe("Test date picker via webdriver uni", () => {
+describe("Test date picker via webdriver_uni", () => {
     it("Select date from date picker", () => {
         cy.visit("http://www.webdriveruniversity.com/")
         cy.get('#datepicker').invoke('removeAttr', 'target').click({force: true});
