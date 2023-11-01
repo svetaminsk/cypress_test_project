@@ -7,7 +7,8 @@
     "triggerAllTests": "npx cypress run",
     "junit-merge": "npx junit-merge -d cypress/results -o cypress/results/results.xml",
     "delete-report": "rm -rf cypress/results/results.xml",
-    "delete-all-reports": "rm -rf cypress/results/* || true"
+    "delete-all-reports": "rm -rf cypress/results/* || true",
+    "triggerAllTetst-dashboard": "npx cypress run --record --key 079bde15-acc5-4b2e-a3dd-ed3520eb1b84"
   },
   "author": "",
   "license": "ISC",
